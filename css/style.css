@@ -1,0 +1,89 @@
+/* ベーススタイリング */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFF0F5;
+}
+
+header {
+    background-color: #FFB6C1;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+    border-bottom: 3px solid #FF69B4;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+/* 人数入力ラベルのスタイリング */
+.label, .serving-label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* 人数入力フィールドのスタイリング */
+#serving-size, .serving-input {
+    width: 50px;
+    margin: 10px 0; /* 上下マージンを10pxに設定 */
+    display: inline-block; /* 横並びに表示 */
+}
+
+.input-field {
+    margin: 10px 0;
+    padding: 10px;
+    width: calc(100% - 20px); /* 全体の幅から左右のマージンとパディングを引いた幅 */
+    border: 2px solid #FF69B4;
+    border-radius: 15px;
+}
+
+.action-button {
+    background-color: #FF69B4;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0px 8px 15px rgba(255, 105, 180, .4);
+}
+
+.action-button:hover {
+    background-color: #FFC0CB;
+}
+
+#ingredients-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer {
+    background-color: #FFB6C1;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* その他のボタンスタイリング */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

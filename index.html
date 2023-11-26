@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>レシピメモアプリ</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>レシピメモアプリ</h1>
+    </header>
+
+    <main>
+        <section id="recipe-input">
+            <h2>レシピを入力</h2>
+            <div class="input-group">
+                <input type="text" id="recipe-link" placeholder="レシピURL" class="input-field">
+                <label for="serving-size" class="label">何人分:</label>
+                <input type="number" id="serving-size" placeholder="人数" min="1" value="1" class="serving-input">
+                <button id="generate-list" class="action-button">材料リスト生成</button>
+            </div>
+        </section>
+    
+
+        <section id="ingredients-list">
+            <h2>材料リスト</h2>
+            <ul id="list-display">
+                <!-- ここに材料リストが表示されます -->
+            </ul>
+            <button id="print-list">リストを印刷</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 レシピメモアプリ</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+
