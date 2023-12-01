@@ -1,15 +1,15 @@
-package main
+// package main
 
-import(
-	"net/http"
-	"log"
-)
+// import(
+// 	"net/http"
+// 	"log"
+// )
 
-fucn main(){
-	http.HandleFunc("/",handler)
-	log.Fetal(gttp.ListenAndServe(":8080",nill))
-}
+// fucn main(){
+// 	http.HandleFunc("/",handler)
+// 	log.Fetal(gttp.ListenAndServe(":8080",nill))
+// }
 
-func handler( w http.ResponseWriter,
+// func handler( w http.ResponseWriter,
 
-)
+// )
