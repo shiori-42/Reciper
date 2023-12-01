@@ -1,4 +1,4 @@
-module github.com/shiori-42/myapp
+module github.com/shiori-42/reciper
 
 go 1.21.4
 

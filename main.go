@@ -11,7 +11,7 @@ import(
 	"os"
 
 	"github.com/gocolly/colly/v2"
-	"github.com/shiori-42/^^^^^^"
+	"github.com/shiori-42/reciper/api"
 )
 
 //材料を格納する構造体
@@ -78,32 +78,15 @@ func main(){
 
 	jsonFile.Write(jsonString)
 
+	fs := http.FileServer(http.Dir("."))
+    http.Handle("/", fs)
+
 	//HTTPサーバーを設定
-	http.HandleFunc("/api./recipe",api.RecipeHandler)
+	http.HandleFunc("/api/recipe",api.RecipeHandler)
 	fmt.Println("Server is running at http://localhost:8080")
 	http.ListenAndServe(":8080",nil)
 
 }
 
 //https://cookpad.com/recipe/1751814
-
-
-
-
-c.OnHTML(,func(e *colly.HTMLElement){
-
-})
-
-c.ONHTML(,func(e *colly.HTMLElement){
-
-})
-
-
-func parseServings(text string)int{
-
-}
-
-func scaleIngredients(ingredients []Ingredient,serbving int,targeSerbings int)[]Ingredient{
-
-}
 
